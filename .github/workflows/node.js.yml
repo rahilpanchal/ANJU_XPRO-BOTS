@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm apt-get install -y
-    - run: npm apt-get update && start
+    - run: npm install
+    - run: npm start
     - run: npm test
